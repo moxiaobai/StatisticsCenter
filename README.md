@@ -8,11 +8,12 @@
 
 ##php接口调用方法
 
-###统计开始
 ```php
+//统计开始
 Statistic:tick($module = '', $interface = '');
 ```
-###上报数据
+
 ```php
+//上报数据
 Statistic:report($success, $code, $msg);
 ```
