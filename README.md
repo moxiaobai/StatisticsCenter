@@ -10,10 +10,11 @@
 
 ```php
 //统计开始
-Statistic:tick($module = '', $interface = '');
+$instance = StatisticClient::instance('192.168.1.202:9603');
+Statistic:tick();
 ```
 
 ```php
 //上报数据
-Statistic:report($success, $code, $msg);
+Statistic:report($module, $interface, $success, $msg);
 ```
